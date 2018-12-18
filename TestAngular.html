@@ -1,0 +1,128 @@
+<html lang="en" ng-app>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>codepen</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="test.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   </head>
+  <body>
+   
+        <div class="topnavbar">
+                <a href="/agile.html">Agile</a>
+                <a href="/spring.html">Spring</a>
+                <a href="/groovy.html">Groovy</a>
+                <a href="/sts.html">STS</a>
+                <a href="/angularjs4.html">AngularJS4</a>
+                <a href="/sadu.html">Scala</a>
+                <a href="/home.html">Hibernate</a>
+                <a href="/flex.html">FLEX</a>
+                <a href="/docker.html">Docker</a>
+                <a href="#Java">JAVA9</a>
+                <a href="#Bootstrap">Bootstrap</a>
+                <div class="dropdown">
+                        <button class="dropbtn">Contact 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                </div> 
+        </div>
+
+        <div class="midnavbar">
+          <a href = "#TRAVEL">TRAVEL</a>
+          <a href = "#HOTEL">HOTEL</a>
+          <a href = "#TAXI">TAXI</a>
+          <a href = "GUIDE">GUIDE</a>
+        </div>
+
+      
+      
+
+      <div class="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        
+      </div>
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Column 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 3</h3>        
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+        </div>
+      </div>
+
+      <div ng-controller = "studentController">
+         
+        <table border = "0">
+           <tr>
+              <td>Enter first name:</td>
+              <td><input type = "text" ng-model = "student.firstName"></td>
+           </tr>
+           
+           <tr>
+              <td>Enter last name: </td>
+              <td>
+                 <input type = "text" ng-model = "student.lastName">
+              </td>
+           </tr>
+           
+           <tr>
+              <td>Name: </td>
+              <td>{{student.fullName()}}</td>
+           </tr>
+           
+           <tr>
+              <td>Subject:</td>
+         
+              <td>
+                 <table>
+                    <tr>
+                       <th>Name</th>.
+                       <th>Cost</th>
+                    </tr>
+                    
+                    <tr ng-repeat = "subject in student.subjects">
+                       <td>{{ subject.name }}</td>
+                       <td>{{ subject.marks }}</td>
+                    </tr>
+             
+                 </table>
+              </td>
+         
+           </tr>
+        </table>
+        
+     </div>
+
+     <div class="topnavbar">
+      <a href="/blog.html">BLOG</a>
+      <a href="/bootstrap.html">Bootstrap</a>
+      <a href="/csssample.html">CSS</a>
+      <a href="/home.html">HOME</a>
+      <a href="/moustache.html">moustache</a>
+      <a href="/simu.html">simu</a>
+      <a href="/slider.html">sliderS</a>
+      <a href="/springcrudhome.html">crud</a>
+      <a href="/useme.html">useme</a>
+     </div>
+
+  </body>
+</html>
